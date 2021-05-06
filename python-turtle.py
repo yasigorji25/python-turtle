@@ -21,45 +21,8 @@
 
 
 
-#-----Assignment Description-----------------------------------------#
-#
-#  URBAN LANDSCAPES
-#
-#  This assignment tests your skills at defining functions, processing
-#  data stored in lists and efficiently repeating multiple actions in
-#  order to display a complex visual image.  The incomplete
-#  Python script below is missing a crucial function, "build_city".
-#  You are required to complete this function so that when the
-#  program is run it draws a city whose plan is determined by
-#  randomly-generated data stored in a list which specifies what
-#  style of building to erect on particular sites.  See the
-#  instruction sheet accompanying this file for full details.
-#
-#  This template file must be used and you will submit
-#  your final solution as a single file only.
-#
-#--------------------------------------------------------------------#  
-
-
-
-#-----Preamble-------------------------------------------------------#
-#
-# This section imports necessary functions and defines constant
-# values used for creating the drawing canvas.  You should not change
-# any of the code in this section.
-#
-
-# Import the functions needed to complete this assignment.  You
-# should not need to use any other modules for your solution.  In
-# particular, your solution must not rely on any non-standard Python
-# modules that need to be installed separately, because the markers
-# may not have access to such modules.
-
 from turtle import *
 from math import *
-
-# Define constant values used in the main program that sets up
-# the drawing canvas.  Do not change any of these values.
 
 canvas_height = 700 # pixels
 canvas_width = 1100 # pixels
@@ -332,9 +295,6 @@ fixed_plan_26 = \
 #--------------------------------------------------------------------#
 
 
-
-#-----Function for Assessing Your Solution---------------------------#
-#
 # The function in this section will be used to mark your solution.
 # Do not change any of the code in this section.
 #
@@ -364,17 +324,7 @@ def random_plan(print_plan = True):
     # Return the result to the student's build_city function
     return city_plan
 
-#
-#--------------------------------------------------------------------#
 
-
-
-#-----Student's Solution---------------------------------------------#
-#
-#  Complete the assignment by completing the "build_city" function below.
-#
-
-# Erect buildings as per the provided city plan
 def draw_triangle(x, y, pencolour, fillcolour, width):
     penup()
     pencolor(pencolour)
